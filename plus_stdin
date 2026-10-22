@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import sys
 
 def try_int(line):
@@ -9,7 +8,7 @@ def try_int(line):
 
 ans = 0
 for line in sys.stdin:
-    line = line.rstrip()
-    ans += try_int(line)
+    ans += try_int(line.rstrip())
+
 
 print(ans)
