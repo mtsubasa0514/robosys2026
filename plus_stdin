@@ -1,4 +1,8 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2026 Tsubasa Matsumoto
+
 import sys
+
 
 def try_int(line):
     try:
