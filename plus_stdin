@@ -9,6 +9,7 @@ def try_int(line):
 
 ans = 0
 for line in sys.stdin:
+    line = line.rstrip()
     ans += try_int(line)
 
 print(ans)
