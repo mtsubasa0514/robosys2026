@@ -3,22 +3,12 @@ import sys
 
 def try_int(line):
     try:
-        return int(line)
+        return int(float(line))
     except ValueError:
         return float(line)
 
 ans = 0
 for line in sys.stdin:
     ans += try_int(line)
-
-print(ans)#!/usr/bin/env python3
-import sys
-
-ans = 0
-for line in sys.stdin:
-    try:
-        ans += int(line)
-    except ValueError:
-        ans += float(line)
 
 print(ans)
